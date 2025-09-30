@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My GitHub Pages Website</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fad390, #a18cd1);
+      background-size: 400% 400%;
+      animation: gradientShift 15s ease infinite;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.08);
+      padding: 3rem;
+      border-radius: 20px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+      max-width: 650px;
+      animation: fadeIn 2s ease;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(to right, #00f260, #0575e6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+      opacity: 0.9;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 1.8rem;
+      border-radius: 30px;
+      background: linear-gradient(to right, #ff512f, #dd2476);
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    footer {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      opacity: 0.75;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>✨ Welcome to My Site</h1>
+    <p>This website is hosted on <b>GitHub Pages</b> with a cool animated background and glassmorphism design.  
+    Customize it to make your own portfolio or landing page!</p>
+    <a href="https://github.com" target="_blank" class="btn">Visit My GitHub</a>
+    <footer>© 2025 My Portfolio | Built with ❤️ and GitHub Pages</footer>
+  </div>
+</body>
+</html>
